@@ -1,13 +1,138 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap');
+
+:root {
+  --fs-sm: 16px;
+  --fs-md: 25px;
+  --fs-lg: 16px;
+  --fs-xl: 20px;
+
+  /* color */
+  --color-green: #6e9277;
+  --color-lightblack: #001008;
+  --color-grey: #f5f8f6;
+  --bg-green:#F5F8F6;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ff_Archivo {
+  font-family: "Archivo", sans-serif;
+}
+
+.ff_Kaushan {
+  font-family: "Kaushan Script", cursive;
+}
+
+.color_green {
+  color: var(--color-green);
+}
+
+.color_lightblack {
+  color: var(--color-lightblack);
+}
+
+.bg_green{
+  background: var(--bg-green);
+}
+.top_small_line{
+  max-width: 30px;
+  width: 100%;
+height: 2px;
+background: var(--color-green);
+
+}
+.color_grey {
+  color: var(--color-grey);
+}
+
+.text-16 {
+  font-size: var(--fs-sm);
+}
+
+.text-25 {
+  font-size: var(--fs-md);
+}
+
+.text-32 {
+  font-size: var(--fs-lg);
+}
+
+.text-48 {
+  font-size: var(--fs-xl);
+}
+
+.lh-46 {
+  line-height: 46.43px;
+}
+
+.lh-62 {
+  line-height: 22.4px;
+}
+
+.lh-32 {
+  line-height: 32.5px;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+.big_box{
+  padding: 20px;
+}
+.text_padding{
+  padding: 15px;
+}
+
+@media (min-width:576px) {
+  
+  :root {
+  --fs-sm: 16px;
+  --fs-md: 25px;
+  --fs-lg: 32px;
+  --fs-xl: 25px;
+
+}
+.lh-62 {
+  line-height: 62.4px;
+}
+.big_box{
+  padding: 40px;
+}
+.text_padding{
+  padding: 30px;
+}
+
+
+}
+
+@media (min-width:768px) {
+  
+  :root {
+  --fs-sm: 16px;
+  --fs-md: 25px;
+  --fs-lg: 32px;
+  --fs-xl: 39px;
+
+}
+.top_small_line{
+  max-width: 60px;
+  width: 100%;
+height: 2px;
+background: var(--color-green);
+
+}
+}
+
+@media (min-width:992px) {
+  
+  :root {
+  --fs-sm: 16px;
+  --fs-md: 25px;
+  --fs-lg: 32px;
+  --fs-xl: 48px;
+
+
+}
 }
